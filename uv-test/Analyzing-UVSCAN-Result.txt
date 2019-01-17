@@ -1,0 +1,58 @@
+Copyright 2018 Adobe
+All Rights Reserved.
+
+NOTICE: Adobe permits you to use, modify, and distribute this file in
+accordance with the terms of the Adobe license agreement accompanying
+it. If you have received this file from a source other than Adobe,
+then your use, modification, or distribution of it requires the prior
+written permission of Adobe. 
+
+
+
+Configurations Folder-
+
+1. LocaleCodes.csv- contains Locale Patterns which UVSCAN identifies to generate results. By default, it contains pattern information for some locales. Other locales can be added in the Sheet in the same format.
+
+2. UVScanConfig.properties-  contains regular expression for:
+  a.  Regex_For_Url_Parser- used for url identification.
+  b.  Url_Patterns- used for locale pattern identification.
+  The properties can be modified to suit requirement, and will be reflected in the results in any future runs.
+
+Results Folder-
+
+  Analyse UVSCAN report-
+
+  1. FinalReportLocaleVsUrl.xlsx - contains results for the latest run.
+  a. URLvsLocaleReport Sheet- Each cell under the locales contains Passed/Failed/PassedWithException(PWE) Status along with respective reason codes.
+  b. DetailedReport- Actual Base & Redirection Url are present in this Sheet against String Id, in the exact same order as in URLvsLocaleReport.
+
+  2. MasterReport.xlsx - contains the latest status of all the UrlsVsLocales run till date, and the last modified run date of the url based on its String Id, Base Pattern, Redirection Pattern, Eng Base, Eng Redirection.
+
+  Configure Urls-
+
+  Configurations Sheet- 
+  a.	Configure the result cells of UrlvsLocaleReport Sheet using color codes of corresponding exception type mentioned in Configurations Sheet.
+  b.	Configure the Validation of Base and Redirection Urls by putting Yes/No in Configurations Sheet under Validations To Be Performed.
+  c.	After applying the Configurations, run UVSCAN(run.bat) for All Locales containing modifications.
+
+  Analytics-
+
+  LocalevsStatusReport Sheet- contains Total, Passed, PWE, Failed Count of all locales on which UVSCAN is run.
+
+  To run Urls other than those present in dict_csv(user-input)-
+
+  1.	Update “URLvsLocaleReport” sheet in FinalReportLocaleVsUrl.xlsx
+
+  a.	In column  A,  enter the StringId as “helpResources<unique_id>”, e.g. helpResources1, helpResources2, etc.
+  b.	In column B, enter the base url for Japanese locale, e.g. https://helpx.adobe.com/jp/premiere-pro/archive.html
+  c.	In column D, enter the base url for English locale, e.g. https://helpx.adobe.com/premiere-pro/archive.html
+
+  2.  Run UVSCAN for Japanese locale - Modify locales.txt(user-input) such that it contains only ja_JP. 
+    Changes-  a.  Patterns get created and result for ja_JP locale is generated.
+              b.  StringId changes from “helpResources<unique_id>” to English Base Url.
+
+  3.  Then Run UVSCAN for all the required locales- Modify locales.txt and add locales, one on each line, according to the requirement.
+
+  4.  Analyse the results in FinalReportLocaleVsUrl.xlsx.
+
+*** All files modified in results_directory(user-input) should be placed in the same path as the original for UVSCAN to pick up the changes on the next run ***

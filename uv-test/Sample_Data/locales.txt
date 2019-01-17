@@ -1,0 +1,5 @@
+ja_JP
+ru_RU
+de_DE
+fr_FR
+pt_BR

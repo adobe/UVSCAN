@@ -1,0 +1,142 @@
+{
+
+"UvScanServiceReportUrl":"engine/rgm/UvScan/",
+
+"UvScanResultMessage1":"",
+"UvScanResultMessage2":"Results are available ",
+"UvScanResultMessage3":"here",
+
+"UvScanResultMessageForSuccess":"No Error: ",
+
+"UvScanResultMessageForFailure":"Error: ",
+
+"UvScanResultMessageForExceptionScenario":"Error: Process failed. Not properly executed. Aborting due to exception...",
+
+"UvScan_FolderName_OnServer":"UV-SCAN",
+
+"UvScanConfigDirName":"Configurations",
+"UvScanResultsDirName":"Results",
+"UvScanZipDirName":"Zip",
+"CompressFileExt":"zip",
+
+
+"UvScanSampleConfigDirPath":"SampleFiles/Configurations",
+"UvScanSampleResultsDirPath":"SampleFiles/Results",
+"UvScanSampleZipDirPath":"SampleFiles/Zip",
+
+"OffsetForLuceneSearch":"0",
+"BlockSizeForLuceneSearch":"1000",
+"TimeoutForUrlPingInMs":"5000",
+
+"CoreStringKeywordsForLuceneSearch":"http,www",
+
+"HTTP_Protocol":"http://",
+"USER_AGENT_HEADER":"Mozilla/4.0",
+
+"Adobe_ErrorPage_UrlAddress":"http://www.adobe.com/special/errorpages/404.html",
+"Adobe_ErrorPage_UrlAddressPart":"www.adobe.com/special/errorpages/404.html",
+
+"HelpResource_Url_StringID":"helpResources",
+
+"countryPatternWord":"<country>",
+"languagePatternWord":"<language>",
+"localePatternWord":"<locale>",
+"localeHyphenPatternWord":"<localeHyphen>",
+
+"UvScan_PatternsReport_FileName":"MasterReport",
+"UvScan_PatternsReport_FileExt":"xlsx",
+"UvScan_Patterns_FileName":"URLPattern",
+"UvScan_Patterns_FileExt":"csv",
+"UvScan_Patterns_File_RecordDelimiter":"\r\n",
+"UvScan_Patterns_File_Header":"String ID,Base URL Pattern,Redirection URL Pattern,English Base URL,English Redirection URL,Pattern Remarks",
+
+"UvScan_LocaleCodes_FileName":"LocaleCodes",
+"UvScan_LocaleCodes_FileExt":"csv",
+"UvScan_LocaleCodes_File_RecordDelimiter":"\r\n",
+"UvScan_LocaleCodes_File_Header":"Locale,Country,Alternate Locale,Language,Fallback Locale,Fallback Country,Fallback Language",
+
+"UvScan_Config_FileName":"UVScanConfig",
+"UvScan_Config_FileExt":"properties",
+
+"UvScan_ExceptionList_FileName":"ExceptionalList",
+"UvScan_ExceptionList_FileExt":"csv",
+"UvScan_ExceptionList_File_RecordDelimiter":"\r\n",
+"UvScan_ExceptionList_File_Header":"Locale,Urls to be ignored,Urls to be checked for 404,Urls to be deleted",
+
+"UvScan_Locale_Result_FileExt":"csv",
+"UvScan_Locale_Result_File_RecordDelimiter":"\r\n",
+"UvScan_Locale_Result_File_ColumnDelimiter":"\n",
+"UvScan_Locale_Result_File_Header":"String ID,English,Base URL Pattern,Redirection URL Pattern,Base URL,Redirected URL,Error Page,Base Result,Redirection Result,Status",
+
+
+"UvScan_LocaleVsStatus_Result_File_FileName":"FinalReportLocaleVsStatus",
+"UvScan_LocaleVsStatus_Result_File_FileExt":"csv",
+"UvScan_LocaleVsStatus_Result_File_RecordDelimiter":"\r\n",
+"UvScan_LocaleVsStatus_Result_File_ColumnDelimiter":"\n",
+"UvScan_LocaleVsStatus_Result_File_Header":"Locale,Total Count,Passed Count,PWE(Passed with Exception) Count,Failed Count",
+
+
+"UvScan_LocaleVsUrl_Result_File_FileName":"FinalReportLocaleVsUrl",
+"UvScan_LocaleVsUrl_Result_File_FileExt":"xlsx",
+"UvScan_LocaleVsUrl_Result_File_RecordDelimiter":"\r\n",
+"UvScan_LocaleVsUrl_Result_File_ColumnDelimiter":"\n",
+"UvScan_LocaleVsUrl_Result_File_Header":"String ID,Base URL Pattern,Redirection URL Pattern,English Base URL,English Redirection URL,Pattern Remarks,User Remarks,",
+"UvScan_LocaleVsUrl_MasterResult_File_Header":"String ID,Base URL Pattern,Redirection URL Pattern,English Base URL,English Redirection URL,Pattern Remarks,User Remarks,Last Updated,",
+"UvScan_LocaleVsUrl_Result_File_ConfigSheetName":"Configurations",
+"UvScan_LocaleVsUrl_Result_File_Report1SheetName":"URLvsLocaleReport",
+"UvScan_LocaleVsUrl_Result_File_Report2SheetName":"LocalevsStatusReport",
+"UvScan_LocaleVsUrl_Master_File_ReportSheetName":"MasterReport",
+"UvScan_LocaleVsUrl_Detail_File_ReportSheetName":"DetailedReport",
+"Base":"Base URL",
+"Redirection":"Redirection URL",
+
+
+"Display_Message_ColumnDelimiter":"\n",
+"Pattern_Not_Created":"Could not create pattern",
+
+"Display_Message_For_ErrorPage":"Yes",
+"Display_Message_For_Not_ErrorPage":"No",
+
+"Display_Message_For_NewURl":"New",
+"Display_Message_For_DeletedUrl":"Deleted",
+"Display_Message_For_ExistingUrl":"Existing",
+
+"Display_Message_For_Passed_Url":"Passed",
+"Display_Message_For_PassedWithException_Url":"PWE(Passed with Exception)",
+"Display_Message_For_Failed_Url":"Failed",
+
+"Display_Message_For_Timeout_Error":"Timeout occurred while url ping",
+"Display_Message_For_Unsuccessfull_Redirection":"Could not get redirection Url",
+"Display_Message_For_Improper_BaseURLPattern":"Improper Base Url in Patterns file,please update",
+"Display_Message_For_Improper_RedirectionURLPattern":"Improper Redirection Url in Patterns file,please update",
+"Display_Message_For_Improper_Eng_BaseURLPattern":"Improper en_US Base Url in Patterns file,please update",
+"Display_Message_For_Improper_Eng_RedirectionURLPattern":"Improper en_US Redirection Url in Patterns file,please update",
+
+"Display_Message_For_IceMatch_BaseUrl":"Base Url follows expected pattern",
+"Display_Message_For_AlternateParam_Match_BaseUrl":"Base Url uses alternate locale identifier",
+"Display_Message_For_FallBack_Match_BaseUrl":"Base locale Url in resource file",
+"Display_Message_For_Random_Match_BaseUrl":"Base Url uses different locale identifier than expected",
+"Display_Message_For_Eng_Match_BaseUrl":"en_US Url in resource file",
+"Display_Message_For_Pattern_MisMatch_BaseUrl":"Base Url altered",
+
+"Display_Message_For_ErrorPage_Redirection":"Redirects to 404 page",
+
+"Display_Message_For_IceMatch_RedirectedUrl":"Redirection Url follows expected pattern",
+"Display_Message_For_AlternateParam_Match_RedirectedUrl":"Redirected Url uses alternate locale identifier",
+"Display_Message_For_FallBack_Match_RedirectedUrl":"Url redirects to base locale",
+"Display_Message_For_Random_Match_RedirectedUrl":"Redirection Url uses different locale identifier than expected",
+"Display_Message_For_Eng_Match_RedirectedUrl":"Redirects to en_US Url",
+"Display_Message_For_Pattern_MisMatch_RedirectedUrl":"Redirects to wrong Url",
+
+"Display_Message_For_Readme_Heading": "Readme",
+"Display_Message_For_Readme_Body1": "1. Configure the result cells of UrlvsLocaleReport Sheet using color codes of corresponding exception type mentioned in Configurations Sheet.",
+"Display_Message_For_Readme_Body2": "2. Configure the Validation of Base and Redirection Urls by putting Yes/No in Configurations Sheet under Validations To Be Performed.",
+"Display_Message_For_Readme_Body3": "3. Configure the Loc Modification Start & End Date to fetch urls' within the specified period.",
+"Display_Message_For_Readme_Body4": "4. After applying the Configurations, upload the xlsx file in uvscan.corp.adobe.com specifying the same path, and run uvscan once for All Locales.",
+"Display_Message_For_Readme_Body5": "1. Check the Passed/PWE(PassedWithException)/Failed Status of all urls in UrlvsLocaleReport Sheet.  ",
+"Display_Message_For_Readme_Body6": "2. Check the Base and Redirection Urls of each locale in DetailedReport Sheet.",
+"Display_Message_For_Readme_Body7": "3. Check the Passed/PWE/Failed count status in LocalevsStatusReport.",
+"Display_Message_For_Readme_Body8": "4. Check the latest status of all records(including historical records), from MasterReport.xlsx under Results.",
+"Display_Message_For_Readme_Body9": "1. To add helpx urls', add the String ids as <helpResources(id)> in Column A, Japanese helpx urls in Column B, and English help urls in Column D.",
+"Display_Message_For_Readme_Body10": "2. After adding helpx urls', upload the xlsx file on uvscan.corp.adobe.com and run on ja_JP locale first. After the first run on helpx urls' on ja_JP , the String ids automatically get changed from <helpResources(id)> to English Base Url."
+}
