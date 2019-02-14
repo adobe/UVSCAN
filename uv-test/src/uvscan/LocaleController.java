@@ -297,6 +297,7 @@ public class LocaleController {
 		{
 			JSONArray jsonObjHitsArray	 =  LocaleController.jsonObjHits.get(this.locale);
 			System.out.println(LocaleController.jsonObjHits.get(this.locale));
+				
 			log.info("No of String object in lucene output json "+jsonObjHitsArray.length());
 		
 			for(int i =0 ; i< jsonObjHitsArray.length() ; i++)
@@ -362,6 +363,7 @@ public class LocaleController {
 		}catch(Exception e)
 		{
 			log.error("Exception in parsing Json for extracting urls",e);
+			return UrlsInProjectMap;
 		}
 
 		return UrlsInProjectMap ;
@@ -1317,6 +1319,7 @@ public class LocaleController {
  */
 	public void getJSON(String csvpath) throws IOException, JSONException
 	{
+		try{
 		String defaultEncoding = "UTF-8";
 		InputStream in = new FileInputStream(csvpath);
 		BOMInputStream bOMInputStream = new BOMInputStream(in);
@@ -1342,6 +1345,11 @@ public class LocaleController {
 		}
 		parser.close();
 		System.out.println(jsonObjHits.get(this.locale));
+		}
+		catch(Exception e)
+		{
+			System.out.println("CSV File Exception");
+		}
 	}
 
 }
