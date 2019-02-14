@@ -19,7 +19,6 @@
 "UvScanZipDirName":"Zip",
 "CompressFileExt":"zip",
 
-
 "UvScanSampleConfigDirPath":"SampleFiles/Configurations",
 "UvScanSampleResultsDirPath":"SampleFiles/Results",
 "UvScanSampleZipDirPath":"SampleFiles/Zip",
