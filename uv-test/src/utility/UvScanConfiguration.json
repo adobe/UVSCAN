@@ -87,6 +87,8 @@
 "UvScan_LocaleVsUrl_Result_File_Report2SheetName":"LocalevsStatusReport",
 "UvScan_LocaleVsUrl_Master_File_ReportSheetName":"MasterReport",
 "UvScan_LocaleVsUrl_Detail_File_ReportSheetName":"DetailedReport",
+"UvScan_LocaleVsUrl_Date_File_ReportSheetName":"LastRunReport",
+
 "Base":"Base URL",
 "Redirection":"Redirection URL",
 
