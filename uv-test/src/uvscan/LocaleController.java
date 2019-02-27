@@ -571,7 +571,7 @@ public class LocaleController {
 			UvScanUrl urlPattern = val.getValue();
 			String urlPatternID  = val.getKey();
 			UvScanUrl resourceFileUrl =  this.AllUrlsInProjectMap.get(urlPatternID);
-
+			log.info("setting patterns for pattern matching from stored patterns , no of patterns "+resourceFileUrl);
 			if(resourceFileUrl == null)
 			{
 				UvScanUrl u = new UvScanUrl(urlPatternID ,urlPattern.getConfigUrlPattern() , urlPattern.getConfigRedirectedUrlPattern() , urlPattern.getConfigEngUrl() , urlPattern.getConfigEngRedirectedUrl() , urlPattern.getPatternRemarks() , urlPattern.getUserRemarks());
@@ -592,7 +592,10 @@ public class LocaleController {
 				}
 				else
 				{
-					u.setIsDeleted(true);
+					//u.setIsDeleted(true);
+					u.setIsNew(false);
+					u.setExceptionType(UrlExceptionLevel.Delete);
+					continue;
 				}
 				u.setIsNew(urlPattern.getIsNew());
 				
