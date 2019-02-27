@@ -125,22 +125,20 @@ public class UvScanInit {
 
 			log.info("Intstantiating locale controller for "+localesToBeProceessed[i]);
 			LocaleController localeController = new LocaleController(this.AlfProductName , this.AlfCodeName , localesToBeProceessed[i].toString() , generalController);
-
-			if(i==1)
+			localeController.getJSON(csvpath);
+			if(i==localesToBeProceessed.length-1)
 			{
 
-				log.info("extracting strings for en_US and 1st locale "+localesToBeProceessed[i]);
-				
-				localeController.getJSON(csvpath);
+				log.info("extracting strings for en_US and last locale "+localesToBeProceessed[i]);
 				
 				HashMap <String, UvScanUrl> ResourceFileUrlsMap = localeController.getUrlsFromLuceneSearchString(true);
 
-				log.info("Urls extracted for en_US and 1st locale "+localesToBeProceessed[i] +" :"+ResourceFileUrlsMap.size());
+				log.info("Urls extracted for en_US and last locale "+localesToBeProceessed[i] +" :"+ResourceFileUrlsMap.size());
 
 				HashMap <String, UvScanUrl> EngUrlMapFromProductResources = generalController.EngUrlMapFromProductResources;
 				if(Configuration.CheckUrlRedirection)
 				{
-					log.info("redirecting en_US  and 1st locale "+localesToBeProceessed[i] +" Urls and storing response");
+					log.info("redirecting en_US  and last locale "+localesToBeProceessed[i] +" Urls and storing response");
 					ResourceFileUrlsMap = localeController.getUrlResponse(TimeoutForUrlPingInMs);
 
 					EngUrlMapFromProductResources =  localeController.getUrlResponseforEng(TimeoutForUrlPingInMs);	
@@ -151,7 +149,7 @@ public class UvScanInit {
 			{
 				log.info("extracting Urls for "+localesToBeProceessed[i]);
 
-				HashMap <String, UvScanUrl> ResourceFileUrlsMap = localeController.getUrlsFromLuceneSearchString(false);
+				HashMap <String, UvScanUrl> ResourceFileUrlsMap = localeController.getUrlsFromLuceneSearchString(true);
 
 				log.info("Urls extracted for locale "+localesToBeProceessed[i] +" :"+ResourceFileUrlsMap.size());
 
