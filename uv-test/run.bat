@@ -1,4 +1,4 @@
-java -classpath "C:\Users\shrbhatt\eclipse-workspace\uv-test\bin;C:\Users\shrbhatt\Jars\*" uvscan.Start shrbhatt Photoshop ps_main "C:\Users\shrbhatt\eclipse-workspace\locales.txt" "C:\Users\shrbhatt\eclipse-workspace\uvscan" "C:\Users\shrbhatt\eclipse-workspace\Photoshop_x.x.csv"
+java -classpath bin/;Jars/* uvscan.Start username Photoshop ps_main Sample_Data/locales.txt "" Sample_Data/Photoshop_x.x.csv
 
 rem Please change the paths according to your directory structure
 rem
