@@ -33,9 +33,10 @@ UVScan (URL Verification Scan) is a tool to Verify & Validate URL structure and 
      
     For example:
     
-                 javac -classpath "C:\Users\xyz\Jars\*" -sourcepath src -d bin src/utility/*.java   (Command 1)
-    
-                 javac -classpath "C:\Users\xyz\Jars\*" -sourcepath src -d bin src/uvscan/*.java    (Command 2)
+                javac -classpath Jars/* -sourcepath src -d bin src/utility/*.java
+                
+                javac -classpath Jars/* -sourcepath src -d bin src/uvscan/*.java
+
 
 5. To run the project - run "run.bat" (read comments & change the paths accordingly)
 
@@ -61,7 +62,7 @@ UVScan (URL Verification Scan) is a tool to Verify & Validate URL structure and 
           
     For example: 
                 
-                java -classpath "C:\Users\xyz\eclipse-workspace\uv-test\bin;C:\Users\xyz\Jars\*" uvscan.Start xyz Photoshop ps_release "C:\Users\xyz\eclipse-workspace\locales.txt" "C:\Users\xyz\eclipse-workspace" "C:\Users\xyz\eclipse-workspace\Photoshop_x.x.csv"
+                java -classpath bin/;Jars/* uvscan.Start username Photoshop ps_main Sample_Data/locales.txt "" Sample_Data/Photoshop_x.x.csv
                 
 6. Check the results in the <results_directory>/UVSCAN/Results/FinalReportVsUrl.xlsx. Read the [Analyzing-UVSCAN-Result](uv-test/Analyzing-UVSCAN-Result.txt) for more information.
 
