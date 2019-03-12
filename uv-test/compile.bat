@@ -1,6 +1,5 @@
-javac -classpath "C:\Users\shrbhatt\Jars\*" -sourcepath src -d bin src/utility/*.java
-javac -classpath "C:\Users\shrbhatt\Jars\*" -sourcepath src -d bin src/uvscan/*.java
-
+javac -classpath Jars/* -sourcepath src -d bin src/utility/*.java
+javac -classpath Jars/* -sourcepath src -d bin src/uvscan/*.java
 
 rem Please change the paths according to your directory structure
 rem
