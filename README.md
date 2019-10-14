@@ -12,13 +12,13 @@ UVScan (URL Verification Scan) is a tool to Verify & Validate URL structure and 
 
 ### Usage
 
-1. Copy UvScanConfiguration.json from /uv-test/src/utility/ to /uv-test/bin/utility/
+1. Copy `UvScanConfiguration.json` from `/uv-test/src/utility/` to `/uv-test/bin/utility/`
 
-2. Add locales in a txt file (locales.txt). For example:  /uv-test/Sample_Data/locales.txt.
+2. Add locales in a txt file (`locales.txt`). For example:  `/uv-test/Sample_Data/locales.txt`.
 
-3. Place all strings with/without URLs in a csv file containing records with the following headers -  "String Id", "Core String", "Localized String", "Locale". For example:  /uv-test/Sample_Data/Photoshop_x.x.csv
+3. Place all strings with/without URLs in a csv file containing records with the following headers -  "String Id", "Core String", "Localized String", "Locale". For example:  `/uv-test/Sample_Data/Photoshop_x.x.csv`
 
-4. To compile the project - run "compile.bat" (change the paths accordingly)
+4. To compile the project - run `compile.bat` (change the paths accordingly)
 
     Compile.bat: 
             
@@ -64,7 +64,7 @@ UVScan (URL Verification Scan) is a tool to Verify & Validate URL structure and 
                 
                 java -classpath bin/;Jars/* uvscan.Start username Photoshop ps_main Sample_Data/locales.txt "" Sample_Data/Photoshop_x.x.csv
                 
-6. Check the results in the <results_directory>/UVSCAN/Results/FinalReportVsUrl.xlsx. Read the [Analyzing-UVSCAN-Result](uv-test/Analyzing-UVSCAN-Result.txt) for more information.
+6. Check the results in the `<results_directory>/UVSCAN/Results/FinalReportVsUrl.xlsx`. Read the [Analyzing-UVSCAN-Result](uv-test/Analyzing-UVSCAN-Result.txt) for more information.
 
 
 ### Contributing
